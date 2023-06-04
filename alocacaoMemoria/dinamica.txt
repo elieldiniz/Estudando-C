@@ -1,0 +1,37 @@
+
+O espaco  e alocado dinamicamente durante a execucao do progrma;
+pode ser crada ou eliminada durante a execucao do prgrama,
+ocupandp espaco na memoria apenas enquanto esta sendo utilizado;
+sao alocados na heap(free store) da memoria Ram;
+liberacao de memoria feita manualmente pelo  programdor;
+
+Porque usar alocacao dinamica
+
+Alocacao dinamica e o processo que aloca memoria em tempo de exucucao;
+ela e utilizada quando nao sabe as certo quando de memoria sera necessario 
+para o armazenamento dos elementos;
+Assim, o tamanho de memoria necessario e determinado conforme necessidade;
+dessa forma evita o desperdicio de memoria
+memoria heap so acessa via ponteiros
+
+alem disso, size(heap)>> size(stack)
+
+malloc: memory allocation : alocacao de memoria
+    *aloca um bloco de bytes consecutivos na memoria e devolve o endereco desse bloco
+    *aloca um sequencia de bytes contidos na memoria heap
+
+    tipo* v= (tipo*)malloc(n* sizeof(tipo));
+
+    
+    int v = (int*)malloc(5 * sizeof(int)); = aloca dinamicamente um vetor de 5 float  na memoria heap
+
+calloc:
+    alocar na heap dinamicamente um vetor de 5 do tipo float
+    aloca um bloco de bytes consecutivos namemoria heap e iniciali todosos valores com 0 (NULL para ponteiros);
+ex:   float *v =(float*) calloc(5 , sizeof(float));
+    retorna  5 ederecos para um float  na em float *v 
+    *v e armazenado na memoria stack
+    v[3] acessa dinamicamente a memoria heap que esta contendo o vetor 3 definido
+    em  float *v;
+
+

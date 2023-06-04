@@ -1,0 +1,15 @@
+
+O espaco para variaveis e reservado no incicio da execucao;
+cada variavel tem seu endereco fixados e a area de memoria ocupada por ela 
+mantem constante durante toda a execucao;
+sao alocadas stack da memoria;
+liberacao de memoria feita automaticamente pelo compilador, SO sistema operacional;
+daclaracoes de variavel estaticas;
+toda variavel alocada na memoria stavk;
+int a;
+float b;
+char c;
+int a[10]
+float *p;
+
+
