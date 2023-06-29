@@ -1,0 +1,34 @@
+    tipo de Abstrato de dados (TAD)
+
+1- visa desvincular o tipo de dados (estruturas e opreacoes que as manipulam) de sua implementacao;
+2- quando definimos um tipo abstrato de dados (TDA) estamos preocupado com oque faz (especificacao)
+e nao como ele faz (implementacao);
+3- ideia parecida com encapsu;amento em orientacao a objetos;
+    - escondemos os dados detalhes do usuario, fornecendo apenas uma interface publica
+    (metodos/operacoes)para manipular-livros
+
+divisao de tipo de dados abistrato
+            especificacao               implementacao
+        1-sintaxe  2-semantica   |  1-representacao  2-algoritimo
+
+separacao de especificacao de implementacao: permite o uso do TAD sem conhecer nada sobre a sua implementacao
+
+separamos a especificacao do tipo em um arquivo de cabecalho(.h) e sua impleentacao em um arquivo fonte.cabecalho
+
+    seu_tad.h
+
+    seu_tad.c 
+
+os programas ou outras TADS que utilizam seu TAD devem incluir sua especificacao:
+ ex em c : #include 'seu_tad' sera incluido em seu_tad.h para ser usado
+    
+    Vantagende TAD
+Reutilizacao:
+    -abtracao de detalhes da imprecao
+facilidade de manutencao
+    -mudancas na implemtacao do TDA nao afetam o codigo fonte dos programas que utilizamos
+    (ocultamento de informacoa)
+corretor
+    -codigos testedaos em diferentes contextos
+
+

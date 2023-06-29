@@ -1,0 +1,15 @@
+uma lista encadeada (ligada) e uma representacao de uma sequencia de elementos/objetos
+na memoria do computador
+os elementos, nos da lista, sao armazenados em posicoes  quaisquer da memoria e sao ligadas po ponteiros;
+logo, elemento consecutivos da lista nao fica necessariamente em posicoes consecutivas na memoria.
+cada no comtem um elemento/objeto de determinado tipo e um ponteiro para o procimo elemeto da lista --> lista encadeada
+no caso do ulimo no, este ponteiro aponta para null
+e partir de cada elemento parte para outro
+
+    Podemos ainda ter outros tipos de lista (que detalhamos depois)
+        listas circulares 
+        listas duplamente-encadeadas
+        lista circulares  duplamente encadeadas
+
+
+

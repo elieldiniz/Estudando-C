@@ -1,0 +1,35 @@
+Em C, um "include guard" (ou "guarda de inclusão") 
+é uma técnica usada para evitar a inclusão múltipla de um mesmo arquivo de cabeçalho em um programa.
+Quando você inclui um arquivo de cabeçalho em seu código C usando a diretiva #include, 
+o pré-processador copia o conteúdo do arquivo de cabeçalho diretamente para o local onde a diretiva foi usada.
+Isso significa que se o mesmo arquivo de cabeçalho for incluído várias vezes em diferentes partes do seu código
+você pode acabar com múltiplas definições de tipos, variáveis ou funções, o que resulta em erros de compilação.
+
+O "include guard" é uma solução para esse problema. Ele consiste em inserir um conjunto de diretivas condicionais no início e no final do arquivo de cabeçalho
+ garantindo que seu conteúdo seja processado apenas uma vez, mesmo que seja incluído várias vezes.
+
+Aqui está um exemplo simples de como usar um "include guard" em um arquivo de cabeçalho chamado "header.h":
+
+
+#ifndef HEADER_H   // Verifica se a constante HEADER_H não foi definida anteriormente
+#define HEADER_H   // Define a constante HEADER_H para evitar múltiplas inclusões
+
+// Conteúdo do arquivo de cabeçalho
+
+#endif  // Fim do "include guard"
+
+
+
+Quando você inclui o arquivo "header.h" em seu código usando #include "header.h", 
+o pré-processador verifica se a constante HEADER_H já foi definida anteriormente. 
+Se não estiver definida, o pré-processador define a constante e processa o conteúdo do arquivo de cabeçalho. Caso contrário,
+ o pré-processador ignora o conteúdo, evitando a inclusão múltipla.
+
+O uso de "include guards" é uma prática comum em programação C para garantir que os arquivos de cabeçalho sejam incluídos apenas uma vez,
+evitando problemas de definições duplicadas. Isso ajuda a manter a consistência e evita erros de compilação relacionados a inclusões múltiplas.
+
+essa paste e um teste de include guarde para executalo use 
+ 1-  gcc -c dummy.c  
+ 2- gcc -c floa_vector.c
+ 3- gcc teste_include_gursds.c dummy.o floa_vector.o -o teste
+ 4-./teste

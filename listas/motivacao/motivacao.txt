@@ -1,0 +1,33 @@
+poblema em vetores / arras
+
+1- suponha que queremos armazenar um lista de alunos em um vetor/ array
+2- sabemos, inicialmente, que a quantidade de alunos  e 5
+3- entao, alocamos um vetor de 5 posicoes e inserimos os alunos
+4- entao agora queremos adicionar mais um aluna a esse vetor de 5 posicoes 
+5- pode se usar as seguintes opcoes
+
+ops 1
+
+1- existe uma funcao em c chamada realloc que realoca um espaco de memoria ->esse e comando perigoso
+2- quando mal usado, acarreta em perda de dados
+3- nao indicado
+
+ops 2
+
+1- criar um vetor de 6 posicoes e copiar todo os valores do antigo vetor e adicionar o novo alunos
+2- porem isso e um poblema 
+    a cada novo aluno, precisaremos alocar um novo vetor;
+    copiar os dados de um vertor a outro... isso e ineficiente
+
+ops 3
+
+1-criamos um vetor muito grande, com muitas posicoes, de mode que "sempre" teremos espacos para inserir um
+novo aluno
+2-  suponha que adotamos a ops 3 para a implementacao 
+3-  adicina um novo aluno no comeco do vetor
+2-porem isso e um problema:
+    -suponha que adiciona atraves de um for primeiro ira percorrer todo o vetor
+    e deslocar cada aluno uma casa para frente e adicinar o aluno novo no comeco de vetor
+
+    -o mesmo problema acontecera se quiser remover um aluno, mas  quisermos manter a ordem a qual eles foram inseridos no vetor
+
